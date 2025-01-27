@@ -36,13 +36,8 @@ const App = () => {
 
   useEffect(() => {
     dispatch(fetchIngredients());
-
-    dispatch(getUserThunk())
-      .unwrap()
-      .catch((err) => {
-        console.log(err);
-      })
-      .finally(() => dispatch(setAuthChecked()));
+    dispatch(getUserThunk());
+    dispatch(setAuthChecked());
   }, [dispatch]);
 
   function closeModal(): void {
