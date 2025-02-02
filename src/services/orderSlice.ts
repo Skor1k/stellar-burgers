@@ -14,7 +14,7 @@ interface INewOrderState {
   orderByNumberError: string | null | undefined;
 }
 
-const initialState: INewOrderState = {
+export const initialState: INewOrderState = {
   orderModalData: null,
   name: '',
   isLoading: true,
