@@ -8,7 +8,7 @@ import { initialState as user } from './userSlice';
 
 describe('rootReducer', () => {
   test('Должен инициализироваться и возвращать исходное состояние', () => {
-    const initAction = { type: 'init' };
+    const initAction = { type: 'UNKNOWN_ACTION' };
     const state = rootReducer(undefined, initAction);
 
     expect(state).toEqual({
