@@ -1,3 +1,6 @@
+const MODAL = 'Детали ингредиента';
+const INGREDIENT_1 = 'ingredient1';
+
 describe('Проверяем доступность', () => {
   beforeEach(() => {
     cy.intercept('GET', 'api/ingredients', { fixture: 'ingredients.json' });
@@ -41,24 +44,24 @@ describe('Проверка модального окна', () => {
   });
 
   it('Открытие модальнго окна', () => {
-    cy.contains('Детали ингредиента').should('not.exist');
-    cy.contains('ingredient1').click();
-    cy.contains('Детали ингредиента').should('exist');
-    cy.get('#modals').contains('ingredient1').should('exist');
+    cy.contains(MODAL).should('not.exist');
+    cy.contains(INGREDIENT_1).click();
+    cy.contains(MODAL).should('exist');
+    cy.get('#modals').contains(INGREDIENT_1).should('exist');
   });
 
   it('Закрытие модальнго окна на крестик', () => {
-    cy.contains('ingredient1').click();
-    cy.contains('Детали ингредиента').should('exist');
+    cy.contains(INGREDIENT_1).click();
+    cy.contains(MODAL).should('exist');
     cy.get('[data-cy=close-icon]').click();
-    cy.contains('Детали ингредиента').should('not.exist');
+    cy.contains(MODAL).should('not.exist');
   });
 
   it('Закрытие модальнго окна по клику на оверлей', () => {
-    cy.contains('ingredient1').click();
-    cy.contains('Детали ингредиента').should('exist');
+    cy.contains(INGREDIENT_1).click();
+    cy.contains(MODAL).should('exist');
     cy.get('[data-cy=modal-overlay]').click('right', { force: true });
-    cy.contains('Детали ингредиента').should('not.exist');
+    cy.contains(MODAL).should('not.exist');
   });
 });
 
