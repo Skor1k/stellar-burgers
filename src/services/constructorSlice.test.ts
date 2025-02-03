@@ -16,7 +16,8 @@ const ingredient = {
   price: 1012,
   image: 'sauce.png',
   image_mobile: 'sauce-mobile.png',
-  image_large: 'sauce-large.png'
+  image_large: 'sauce-large.png',
+  __v: 0
 };
 
 const ingredientsBeforeReordered = [
@@ -31,7 +32,8 @@ const ingredientsBeforeReordered = [
     price: 1013,
     image: 'sauce.png',
     image_large: 'sauce-large.png',
-    image_mobile: 'sauce-mobile.png'
+    image_mobile: 'sauce-mobile.png',
+    __v: 0
   },
   {
     _id: '44412',
@@ -44,7 +46,8 @@ const ingredientsBeforeReordered = [
     price: 1012,
     image: 'rings.png',
     image_large: 'rings-large.png',
-    image_mobile: 'rings-mobile.png'
+    image_mobile: 'rings-mobile.png',
+    __v: 0
   }
 ];
 
@@ -60,7 +63,8 @@ const ingredientsAfterReordered = [
     price: 1013,
     image: 'rings.png',
     image_large: 'rings-large.png',
-    image_mobile: 'rings-mobile.png'
+    image_mobile: 'rings-mobile.png',
+    __v: 0
   },
   {
     _id: '33314',
@@ -73,7 +77,8 @@ const ingredientsAfterReordered = [
     price: 1013,
     image: 'sauce.png',
     image_large: 'sauce-large.png',
-    image_mobile: 'sauce-mobile.png'
+    image_mobile: 'sauce-mobile.png',
+    __v: 0
   }
 ];
 

@@ -14,7 +14,8 @@ const ingredientArray = [
     price: 1012,
     image: 'bun.png',
     image_large: 'bun-large.png',
-    image_mobile: 'bun-mobile.png'
+    image_mobile: 'bun-mobile.png',
+    __v: 0
   },
   {
     _id: '77713',
@@ -27,7 +28,8 @@ const ingredientArray = [
     price: 413,
     image: 'beef.png',
     image_large: 'beef-large.png',
-    image_mobile: 'beef-mobile.png'
+    image_mobile: 'beef-mobile.png',
+    __v: 0
   },
   {
     _id: '77714',
@@ -40,7 +42,8 @@ const ingredientArray = [
     price: 1014,
     image: 'beef.png',
     image_large: 'beef-large.png',
-    image_mobile: 'beef-mobile.png'
+    image_mobile: 'beef-mobile.png',
+    __v: 0
   },
   {
     _id: '77715',
@@ -53,7 +56,8 @@ const ingredientArray = [
     price: 1015,
     image: 'sauce.png',
     image_large: 'sauce-large.png',
-    image_mobile: 'sauce-mobile.png'
+    image_mobile: 'sauce-mobile.png',
+    __v: 0
   }
 ];
 
